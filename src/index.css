@@ -11,6 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+* {
+  font-family: sans-serif;
+}
 
 .athContainer {
   background-color: #eeeeee;
@@ -47,7 +50,7 @@ code {
   grid-template-columns: 1fr 3fr;
 }
 .athBanner .athCancelButton {
-  background: url("images/icons/close.svg") no-repeat;
+  background: url("./imgs/close.svg") no-repeat;
   width: 15px;
   height: 15px;
   cursor: pointer;
@@ -98,7 +101,7 @@ code {
 }
 
 .athGuidanceCancelButton {
-  background: url("../public/close.svg") no-repeat;
+  background: url("./imgs/close.svg") no-repeat;
   width: 15px;
   height: 15px;
   cursor: pointer;
