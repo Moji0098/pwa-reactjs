@@ -7,11 +7,11 @@ function App() {
     <div className="App">
       <AddToHomeScreen
         appId="Add-to-Homescreen React Live Demo"
-        startAutomatically={true}
-        startDelay={0}
-        lifespan={30}
-        skipFirstVisit={true}
-        displayPace={0}
+        // startAutomatically={true}
+        // startDelay={0}
+        // lifespan={30}
+        // skipFirstVisit={false}
+        // displayPace={0}
         customPromptContent={{
           cancelMsg: "",
           installMsg: "Install",
