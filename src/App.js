@@ -7,7 +7,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <AddToHomeScreen
-          appId="Add-to-Homescreen React Modified Styling Example"
+          appId="Add-to-Homescreen React Live Demo"
+          startAutomatically={true}
+          startDelay={0}
+          lifespan={30}
+          skipFirstVisit={true}
+          displayPace={0}
           customPromptContent={{
             cancelMsg: "",
             installMsg: "Install",
