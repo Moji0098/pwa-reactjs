@@ -45,20 +45,19 @@ code {
   grid-template-areas: "logo content" "install install";
   position: relative;
   grid-template-columns: 1fr 3fr;
-
-  .athCancelButton {
-    background: url("images/icons/close.svg") no-repeat;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    position: absolute;
-    border: 0;
-    margin-right: 3px;
-    margin-top: 3px;
-    padding: 0;
-    top: 0;
-    right: 0;
-  }
+}
+.athBanner .athCancelButton {
+  background: url("images/icons/close.svg") no-repeat;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  position: absolute;
+  border: 0;
+  margin-right: 3px;
+  margin-top: 3px;
+  padding: 0;
+  top: 0;
+  right: 0;
 }
 
 .athContentCell {
@@ -78,21 +77,19 @@ code {
 .athInstallButtonCell {
   text-align: right;
   grid-area: install;
-
-  .button {
-    display: unset;
-  }
+}
+.athInstallButtonCell .button {
+  display: unset;
 }
 
 .athGuidance {
   display: none;
   grid-template-areas: "cancel" "image";
   position: relative;
-
-  .athCancelButtonCell {
-    grid-area: cancel;
-    text-align: right;
-  }
+}
+.athGuidance .athCancelButtonCell {
+  grid-area: cancel;
+  text-align: right;
 }
 
 .athGuidanceImageCell {
