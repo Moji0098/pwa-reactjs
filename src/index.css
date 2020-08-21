@@ -211,6 +211,11 @@ code {
 .d-none {
   display: none !important;
 }
-.atohs {
+.atohs-box {
   display: none;
+  position: fixed;
+  top: 1px;
+  left: 1px;
+  background-color: #8de4ff;
+  padding: 1rem;
 }

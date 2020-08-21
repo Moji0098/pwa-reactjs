@@ -60,7 +60,10 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <button id="atohs" class="atohs">ADD TO HOME</button>
+    <div id="atohsbox" class="atohs-box">
+      <button id="btn">ADD</button>
+      <button id="cancel">Cancel</button>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -74,13 +77,21 @@
     -->
     <script>
       let dF;
-      let atohs = document.getElementById("atohs");
+      let atohsbox = document.getElementById("atohsbox");
+      let btn = document.getElementById("btn");
+      let cancel = document.getElementById("cancel");
+      window.addEventListener("load", () => {
+        console.log(0);
+        setTimeout(() => {
+          console.log(1);
 
-      window.addEventListener("beforeinstallprompt", (e) => {
-        console.log("E : ", e);
-        e.preventDefault();
-        dF = e;
-        atohs.style.display = "block";
+          window.addEventListener("onbeforeinstallprompt", (e) => {
+            console.log("E : ", e);
+            e.preventDefault();
+            dF = e;
+            atohsbox.style.display = "block";
+          });
+        }, 1000);
       });
     </script>
   </body>
