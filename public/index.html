@@ -88,7 +88,7 @@
         dF = e;
         atohsbox.style.display = "block";
         btn.addEventListener("click", () => {
-          console.log("E : ", e);
+          console.log("add : ", e);
 
           dF.prompt();
           dF.userChoice.then((choiceResult) => {
@@ -96,7 +96,13 @@
               console.log("user accepted");
             }
             dF = null;
+            atohsbox.style.display = "none";
           });
+        });
+        cancel.addEventListener("click", () => {
+          console.log("cancel : ");
+
+          atohsbox.style.display = "none";
         });
       });
       window.addEventListener("appinstalled", (evt) => {
