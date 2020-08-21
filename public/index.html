@@ -80,18 +80,27 @@
       let atohsbox = document.getElementById("atohsbox");
       let btn = document.getElementById("btn");
       let cancel = document.getElementById("cancel");
-      window.addEventListener("load", () => {
-        console.log(0);
-        setTimeout(() => {
-          console.log(1);
+      // console.log(1);
 
-          window.addEventListener("onbeforeinstallprompt", (e) => {
-            console.log("E : ", e);
-            e.preventDefault();
-            dF = e;
-            atohsbox.style.display = "block";
+      window.addEventListener("beforeinstallprompt", (e) => {
+        console.log("E : ", e);
+        e.preventDefault();
+        dF = e;
+        atohsbox.style.display = "block";
+        btn.addEventListener("click", () => {
+          console.log("E : ", e);
+
+          dF.prompt();
+          dF.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === "accepted") {
+              console.log("user accepted");
+            }
+            dF = null;
           });
-        }, 1000);
+        });
+      });
+      window.addEventListener("appinstalled", (evt) => {
+        alert("app installed");
       });
     </script>
   </body>

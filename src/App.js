@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <AddToHomeScreen
+      {/* <AddToHomeScreen
         appId="Add-to-Homescreen React Modified Behavior Example"
         startAutomatically={true}
         startDelay={0}
@@ -20,7 +20,7 @@ function App() {
           guidanceCancelMsg: "Dismiss",
           src: "images/ExampleLogo.png",
         }}
-      />
+      /> */}
       <header className="App-header">
         <b>PWA Reactjs</b>
       </header>
