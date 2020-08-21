@@ -565,8 +565,8 @@
     }
   ],
   "name": "PWA React",
-  "short_name": "ATH React",
-  "lang": "de-DE",
+  "short_name": "PWA React",
+  "lang": "fa-IR",
   "dir": "auto",
   "theme_color": "#000000",
   "background_color": "#ffffff",

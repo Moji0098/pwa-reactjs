@@ -6,38 +6,19 @@ function App() {
   return (
     <div className="App">
       <AddToHomeScreen
-        appId="Add-to-Homescreen React Live Demo"
-        // startAutomatically={true}
-        // startDelay={0}
-        // lifespan={30}
-        // skipFirstVisit={false}
-        // displayPace={0}
+        appId="Add-to-Homescreen React Modified Behavior Example"
+        startAutomatically={true}
+        startDelay={0}
+        lifespan={30}
+        skipFirstVisit={true}
+        displayPace={0}
         customPromptContent={{
-          cancelMsg: "",
-          installMsg: "Install",
-          guidanceCancelMsg: "",
-        }}
-        customPromptElements={{
-          container: "athContainer",
-          containerAddOns: "",
-          banner: "athBanner",
-          logoCell: "athLogoCell",
-          logoCellAddOns: "athContentCell",
-          logo: "athLogo",
-          titleCell: "athTitleCell",
-          titleCellAddOns: "athContentCell",
-          title: "athTitle",
-          cancelButtonCell: "athCancelButtonCell",
-          cancelButtonCellAddOns: "athButtonCell",
-          cancelButton: "athCancelButton",
-          installButtonCell: "athInstallButtonCell",
-          installButtonCellAddOns: "athButtonCell",
-          installButton: "athInstallButton",
-          installButtonAddOns: "button",
-          guidance: "athGuidance",
-          guidanceImageCell: "athGuidanceImageCell",
-          guidanceImageCellAddOns: "",
-          guidanceCancelButton: "athGuidanceCancelButton",
+          title:
+            "Do you want to install Add-to-homescreen React Modified Behavior Example on your homescreen?",
+          cancelMsg: "No",
+          installMsg: "Yes, sure!",
+          guidanceCancelMsg: "Dismiss",
+          src: "images/ExampleLogo.png",
         }}
       />
       <header className="App-header">
