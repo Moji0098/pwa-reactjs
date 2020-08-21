@@ -1,5 +1,5 @@
 import React from "react";
-import AddToHomeScreen from "@ideasio/add-to-homescreen-react";
+// import AddToHomeScreen from "@ideasio/add-to-homescreen-react";
 import "./App.css";
 
 function App() {
