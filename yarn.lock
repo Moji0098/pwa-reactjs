@@ -1004,7 +1004,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.1":
+"@babel/runtime@^7.1.5", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.1":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -1126,14 +1126,6 @@
   integrity sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
   dependencies:
     "@hapi/hoek" "^8.3.0"
-
-"@ideasio/add-to-homescreen-react@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@ideasio/add-to-homescreen-react/-/add-to-homescreen-react-1.0.4.tgz#70f67320d0c7061d706ca917065eab531ac10cc3"
-  integrity sha512-R/EqWnERubtVfKmYPLaJICh0jIxRjuMAFvGEeLOxaXiJzSo7c5LrkIEHnPV6npbOWiydpKMY1OWW0cGRB/TV0A==
-  dependencies:
-    react "16.13.1"
-    react-dom "16.13.1"
 
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
@@ -8553,7 +8545,7 @@ react-dev-utils@^10.2.1:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
-react-dom@16.13.1, react-dom@^16.13.1:
+react-dom@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
   integrity sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
@@ -8633,7 +8625,15 @@ react-scripts@3.4.3:
   optionalDependencies:
     fsevents "2.1.2"
 
-react@16.13.1, react@^16.13.1:
+react-workbox@^0.5.9:
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/react-workbox/-/react-workbox-0.5.9.tgz#b4746c5fa993588fd6f2bb52d38bac599665c307"
+  integrity sha512-YDgklzSuLs59m7MqBcXNFAGPmRsZI0mHEtWYn5uXjzvhTLUDsn8Di2NzWueiaRjEVPyqN/U7tqxWPe+6kn9H9w==
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+    react "^16.0.0"
+
+react@^16.0.0, react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
