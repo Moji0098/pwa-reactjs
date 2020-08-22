@@ -1,15 +1,14 @@
 import React from "react";
 import {
   WorkBoxProvider,
-  UpdateActivatedReload,
   UpdateActivated,
-  WorkBoxProvider,
+  UpdateAvailable,
 } from "react-workbox";
 
 import "./App.css";
 
 function App() {
-  constructTime = new Date();
+  const constructTime = new Date();
   return (
     <WorkBoxProvider interval={30 * 1000}>
       <div className="App">
